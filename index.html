@@ -10,6 +10,14 @@
       integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
+    <style>
+      .counter,
+      .counter-random,
+      .counter-click {
+        text-align: center;
+        font-size: 40px;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar navbar-default">
@@ -27,7 +35,7 @@
           Increase counter value every second
         </div>
         <div class="panel-body">
-          <div class="counter" style="text-align: center; font-size: 40px;">
+          <div class="counter">
             42
           </div>
         </div>
@@ -36,22 +44,23 @@
         <div class="panel-heading">
           Increase the counter by a random value after 5 seconds.
         </div>
-        <div
-          class="counter-random"
-          style="text-align: center; font-size: 40px;"
-        >
-          42
+        <div class="panel-body">
+          <div class="counter-random">
+            42
+          </div>
         </div>
       </div>
       <div class="panel panel-warning">
         <div class="panel-heading">
           Increase the counter by a random value after clicking on the button
         </div>
-        <div style="text-align: center; font-size: 40px;">
+        <div class="panel-body">
           <div class="counter-click">
             42
           </div>
-          <button class="btn btn-success">Add</button>
+          <button class="btn btn-success">
+            Add
+          </button>
         </div>
       </div>
     </div>
